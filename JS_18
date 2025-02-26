@@ -1,0 +1,35 @@
+# JS_18
+JS_18
+
+
+Prototype methods, objects without __proto__
+-------------------------------------------------
+
+there are modern methods to setup a prototype.
+The modern methods to get/set a prototype are:
+
+Object.getPrototypeOf(obj) – returns the [[Prototype]] of obj.
+Object.setPrototypeOf(obj, proto) – sets the [[Prototype]] of obj to proto.
+
+
+CLASS++++++++++++++++++++++++++++++++++++++++
+
+class User{
+    
+    constructor(name){
+        this.name=name;
+        
+        }
+        sayHi(){
+            alert(this.name);
+            
+        }
+        
+        
+}
+let user= new User("prerna saxena");
+user.sayHi();
+
+output could be PRERNA SAXENA 
+
+
